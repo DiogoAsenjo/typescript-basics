@@ -1,3 +1,5 @@
+import { Pessoa } from "./class";
+
 //Tipos
 let nome: string = "Diogo";
 let idade: number = 28;
@@ -38,3 +40,9 @@ enum EMes {
   JAN = "Janeiro",
   FEV = "Fevereiro",
 }
+
+//Classes
+let diogo = new Pessoa(nome, idade);
+diogo.profissao = "Programador";
+console.log(diogo.profissao);
+console.log(diogo.tempoPraAposentadoria());
